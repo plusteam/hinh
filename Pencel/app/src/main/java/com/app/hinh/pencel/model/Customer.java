@@ -10,23 +10,23 @@ public class Customer {
 
 //    private String customerID = "";
 
-    @SerializedName("cong_ty")
+    @SerializedName("company")
     @Expose
     private String company;
 
-    @SerializedName("customer_type")
+    @SerializedName("customerType")
     @Expose
     private String customerType;
 
-    @SerializedName("danh_gia")
+    @SerializedName("rate")
     @Expose
     private String rating;
 
-    @SerializedName("dia_chi")
+    @SerializedName("address")
     @Expose
     private String address;
 
-    @SerializedName("duan_qt")
+    @SerializedName("project")
     @Expose
     private String project;
 
@@ -34,15 +34,15 @@ public class Customer {
     @Expose
     private String email;
 
-    @SerializedName("ghi_chu")
+    @SerializedName("note")
     @Expose
     private String note;
 
-    @SerializedName("ho_va_ten")
+    @SerializedName("name")
     @Expose
     private String name;
 
-    @SerializedName("id_account")
+    @SerializedName("accountID")
     @Expose
     private String accountID;
 
@@ -50,19 +50,19 @@ public class Customer {
     @Expose
     private String customerID ;
 
-    @SerializedName("lh_dau")
+    @SerializedName("firstContact")
     @Expose
     private String firstContact;
 
-    @SerializedName("lh_tiep")
+    @SerializedName("nextContact")
     @Expose
     private String nextContact;
 
-    @SerializedName("nguon_khach")
+    @SerializedName("agency")
     @Expose
     private String agency;
 
-    @SerializedName("nhu_cau")
+    @SerializedName("demand")
     @Expose
     private String demand;
 
@@ -70,7 +70,7 @@ public class Customer {
     @Expose
     private String other;
 
-    @SerializedName("sdt")
+    @SerializedName("phoneNumber")
     @Expose
     private String phoneNumber;
     public String getCustomerID() {

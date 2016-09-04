@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.app.hinh.pencel.R;
-import com.app.hinh.pencel.adapter.CustomListviewAdapter;
 import com.app.hinh.pencel.adapter.CustomerSectionAdapter;
 import com.app.hinh.pencel.model.CustomListview;
 import com.app.hinh.pencel.model.Customer;
@@ -64,7 +63,7 @@ public class CustomerActivity extends Activity {
 
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 ArrayList<Customer> dt = customers;
-                String id = dt.get(i).getAccountID();
+                String id = dt.get(i).getCustomerID();
                 String cusName = dt.get(i).getName();
                 String phone = dt.get(i).getPhoneNumber();
                 String address = dt.get(i).getAddress();
