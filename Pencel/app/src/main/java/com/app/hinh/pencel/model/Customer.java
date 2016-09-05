@@ -12,67 +12,67 @@ public class Customer {
 
     @SerializedName("company")
     @Expose
-    private String company;
+    private String company="";
 
     @SerializedName("customerType")
     @Expose
-    private String customerType;
+    private String customerType="";
 
-    @SerializedName("rate")
+    @SerializedName("rating")
     @Expose
-    private String rating;
+    private String rating="";
 
     @SerializedName("address")
     @Expose
-    private String address;
+    private String address="";
 
     @SerializedName("project")
     @Expose
-    private String project;
+    private String project="";
 
     @SerializedName("email")
     @Expose
-    private String email;
+    private String email="";
 
     @SerializedName("note")
     @Expose
-    private String note;
+    private String note="";
 
     @SerializedName("name")
     @Expose
-    private String name;
+    private String name="";
 
     @SerializedName("accountID")
     @Expose
-    private String accountID;
+    private String accountID="";
 
     @SerializedName("id_customer")
     @Expose
-    private String customerID ;
+    private String customerID="" ;
 
     @SerializedName("firstContact")
     @Expose
-    private String firstContact;
+    private String firstContact="";
 
     @SerializedName("nextContact")
     @Expose
-    private String nextContact;
+    private String nextContact="";
 
     @SerializedName("agency")
     @Expose
-    private String agency;
+    private String agency="";
 
     @SerializedName("demand")
     @Expose
-    private String demand;
+    private String demand="";
 
     @SerializedName("other")
     @Expose
-    private String other;
+    private String other="";
 
     @SerializedName("phoneNumber")
     @Expose
-    private String phoneNumber;
+    private String phoneNumber="";
     public String getCustomerID() {
         return customerID;
     }

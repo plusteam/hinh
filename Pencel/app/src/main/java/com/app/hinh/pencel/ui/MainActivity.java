@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private LinearLayout llProfileLayout;
     private String email;
     private int idAccount=0;
-
+    private NoteActivity noteAc = new NoteActivity();
     private Cursor cursor;//bang du lieu
     private DatabaseManager databaseManager;//lop lam viec voi DB
     private Final fina = new Final();
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         imgProfilePic = (ImageView) header.findViewById(R.id.imageAvataGoogle);
         txtName = (TextView) header.findViewById(R.id.tvNameUserGoogle);
         txtEmail = (TextView) header.findViewById(R.id.tvEmailGoogle);
-
+        noteAc.getCustomers(1);
     }
 
     @Override
