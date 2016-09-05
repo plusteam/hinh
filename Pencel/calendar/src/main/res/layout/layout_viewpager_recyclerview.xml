@@ -127,7 +127,8 @@
                             android:layout_marginRight="10dp"
                             android:background="@color/colorGreen"
                             android:text="Thời gian"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/white"
+                            android:onClick="showTimePickerDialog"/>
                     </TableRow>
 
                     <TableRow android:layout_marginTop="5dp">

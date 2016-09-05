@@ -1,12 +1,15 @@
 package com.app.hinh.pencel.ui;
 
+import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.app.hinh.pencel.R;
@@ -160,5 +163,20 @@ public class NotificationActivity extends AppCompatActivity {
 
         dialogCustomer.showDialog();
 
+    }
+
+    public void showTimePickerDialog(View view){
+        Calendar calendar= Calendar.getInstance();
+        int hourOfDay=calendar.get(Calendar.HOUR_OF_DAY);
+        int minute=calendar.get(Calendar.MINUTE);
+        boolean is24HourView=true;
+        TimePickerDialog timePickerDialog=new TimePickerDialog(NotificationActivity.this, new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker timePicker, int i, int i1) {
+
+            }
+        },hourOfDay,minute,is24HourView);
+
+        timePickerDialog.show();
     }
 }

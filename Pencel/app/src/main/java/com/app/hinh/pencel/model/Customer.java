@@ -73,9 +73,7 @@ public class Customer {
     @SerializedName("phoneNumber")
     @Expose
     private String phoneNumber="";
-    public String getCustomerID() {
-        return customerID;
-    }
+
 
     public void setCustomerID(String customerID) {
         this.customerID = customerID;
@@ -100,6 +98,10 @@ public class Customer {
 
     public Customer() {
 
+    }
+
+    public String getCustomerID() {
+        return customerID;
     }
 
     public String getAccountID() {
